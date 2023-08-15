@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/f48fe1bbb9.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap" rel="stylesheet">
+    <script>
+        function passvalues()
+        {
+            var name=document.getElementById("name").value;
+            var email=document.getElementById("email").value;
+            var address=document.getElementById("address").value;
+            localStorage.setItem("name",name);
+            localStorage.setItem("email",email);
+            localStorage.setItem("address",address);
+            return;
+
+        }
+    </script>
+</head>
+<body>
+    <div class="wrapper">
+        <form action="Details.htm">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input type="text" id="name" placeholder="Name" required>
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="email" id="email" placeholder="Email" required>
+                <i class="fa-solid fa-envelope"></i>
+            </div>
+
+            <div class="input-box">
+                <input type="address" id="address" placeholder="Address" required>
+                <i class="fa-sharp fa-solid fa-location-dot"></i>
+            </div>
+
+            <button type="submit" class="btn" onclick="passvalues()"/>Login</button>
+        </form>
+    </div>
+    
+</body>
+</html>
