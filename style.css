@@ -11,7 +11,7 @@ body{
     justify-content: center;
     align-items: center;
     min-height: 100vh;
-    background:url(a.jpg) no-repeat;
+    background:url(bb.jpg) no-repeat;
     background-size: cover;
     background-position: center;
 }
@@ -22,7 +22,7 @@ body{
     border: 4px solid rgba(255,255,255,.2);
     backdrop-filter: blur(40px);
     box-shadow: 0 0 20px rgba(0,0,0,.2);
-    color:#fff;
+    color:#37474F;
     border-radius: 20px;
     padding: 30px 40px;
 }
@@ -47,12 +47,12 @@ body{
     border: 2px solid rgba(255,255,255,.2);
     border-radius: 40px;
     font-size: 16px;
-    color: #fff;
+    color: #37474F;
     padding: 20px 45px 20px 20px;
 }
 
 .input-box input::placeholder{
-    color: #fff;
+    color: #37474F;
 
 }
 .input-box i{
@@ -66,7 +66,7 @@ body{
 .wrapper .btn{
     width: 100%;
     height: 45px;
-    background: #fff;
+    background: #37474F;
     border: none;
     outline: none;
     border-radius: 40px;
