@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function matchpassw()
+        {
+            var firstpassword=document.f1.password.value;
+            var secondpassword=document.f1.password2.value;
+            if(firstpassword==secondpassword)
+            {
+                return true;
+            }
+            else if(firstpassword.f1.length<6 || secondpassword.f1.length<6)
+            {
+                alert("PAssword cannot be empty");
+                return false;
+
+            }
+            else
+            {
+                alert("password must be the same");
+                return false;
+            }
+        }
+    </script>
+</head>
+<body>
+    <form name="f1" method="post" action="valid.htm" onsubmit="return matchpassw()">
+    Password:<input type="password" name="password"/><br>
+    Re-enter Password:<input type="password" name="password2"><br>
+    <input type="submit" value="Enter">
+    </form>
+</body>
+</html>
